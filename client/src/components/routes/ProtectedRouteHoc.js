@@ -1,12 +1,15 @@
 import React from 'react';
 import {Route, Redirect, withRouter} from 'react-router-dom'
 import {bool, any, object} from 'prop-types';
-
+import * as firebase from 'firebase'
+import Dashboard from '../dashboard/Dashboard'
 
 //renders the guarded route
 const ProtectedRouteHoc = ({ component: Component, isLoggedIn, ...rest }) => {
 	if (isLoggedIn || rest.public) {
-        console.log('test')
+		console.log(firebase.auth())
+		console.log(isLoggedIn)
+		console.log(rest.public)
 		return (
 			<Route
 				{...rest}
@@ -16,7 +19,8 @@ const ProtectedRouteHoc = ({ component: Component, isLoggedIn, ...rest }) => {
 			/>
 		);
 	}
-	return <Redirect to={{ pathname: '/' }} />;
+
+	return <Redirect to={{ pathname: '/login' }} />;
 };
 
 ProtectedRouteHoc.propTypes = {
