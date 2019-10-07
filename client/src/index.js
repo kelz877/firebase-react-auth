@@ -16,16 +16,20 @@ firebase.initializeApp(firebaseConfig);
 export const AuthContext = React.createContext(null);
 
 function App() {
-    const [isLoggedIn, setLoggedIn] = useState(false);
+    const [isLoggedIn, setLoggedIn] = useState(readSession());
 
     function readSession(){
         const user = window.sessionStorage.getItem(
             `firebase:authUser:${firebaseConfig.apiKey}:[DEFAULT]`
         );
-        if(user) setLoggedIn(true)
+
+        return user != null ? true : false 
+
+        //if(user) setLoggedIn(true)
     }
+  
     useEffect(() => {
-        readSession()
+       // readSession()
     }, [])
 
 
