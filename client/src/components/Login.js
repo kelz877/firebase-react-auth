@@ -16,6 +16,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import KetoLogo from '../assets/keto_logo.png'
 import Carousel from './Carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -207,8 +209,8 @@ const Login = ({history}) => {
                         </form>
                     </div>
                 </Grid>
-                <Grid item xs={false} sm={6} md={8} className={classes.image}>
-                    <Carousel />
+                <Grid item xs={false} sm={6} md={8}>
+                    <Carousel xs={false} sm={6} md={8} className={classes.image} />
                 </Grid>
 
             </Grid>
