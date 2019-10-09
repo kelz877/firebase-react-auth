@@ -15,14 +15,13 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import KetoLogo from '../assets/keto_logo.png'
-
+import Carousel from './Carousel'
 
 const useStyles = makeStyles(theme => ({
     root: {
       height: '100vh',
     },
     image: {
-      backgroundImage: 'url(https://cdn.pixabay.com/photo/2014/07/10/17/17/swimming-pool-389267_1280.jpg)',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -208,8 +207,9 @@ const Login = ({history}) => {
                         </form>
                     </div>
                 </Grid>
-                <Grid item xs={false} sm={6} md={8} className={classes.image} />
-               
+                <Grid item xs={false} sm={6} md={8} className={classes.image}>
+                    <Carousel />
+                </Grid>
 
             </Grid>
 
