@@ -8,8 +8,11 @@ const imageStyle ={
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    height: '100%'
 }
-
+const heightStyle = {
+    height: '100%'
+}
 
 export default () => (
     <Carousel
@@ -18,26 +21,23 @@ export default () => (
         showArrows={false}
         showIndicators={false}
         transitionTime={1000}
-        interval={10000}
-        
+        interval={4000}
+        style={heightStyle}
         showStatus={false}
     >
-        <div>
+        <div style={heightStyle}>
             <img style={imageStyle} src={'https://cdn.pixabay.com/photo/2014/07/10/17/17/swimming-pool-389267_1280.jpg'} />
         </div>
-        <div>
+        <div style={heightStyle}>
             <img style={imageStyle} src={'https://cdn.pixabay.com/photo/2014/07/10/17/17/swimming-pool-389267_1280.jpg'} />
         </div>
-        <div>
+        <div style={heightStyle}>
             <img style={imageStyle} src={'https://cdn.pixabay.com/photo/2014/07/10/17/17/swimming-pool-389267_1280.jpg'} />
         </div>
-        <div>
+        <div style={heightStyle}>
             <img style={imageStyle} src={'https://cdn.pixabay.com/photo/2014/07/10/17/17/swimming-pool-389267_1280.jpg'} />
         </div>
-        <div>
-            <img style={imageStyle} src={'https://cdn.pixabay.com/photo/2014/07/10/17/17/swimming-pool-389267_1280.jpg'} />
-        </div>
-        <div>
+        <div style={heightStyle}>
             <img style={imageStyle} src={'https://cdn.pixabay.com/photo/2014/07/10/17/17/swimming-pool-389267_1280.jpg'} />
         </div>
 

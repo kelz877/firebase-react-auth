@@ -27,6 +27,7 @@ const useStyles = makeStyles(theme => ({
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
+      //backgroundImage: 'url(https://cdn.pixabay.com/photo/2014/07/10/17/17/swimming-pool-389267_1280.jpg)',
     },
     paper: {
       margin: theme.spacing(8, 4),
@@ -125,7 +126,7 @@ const Login = ({history}) => {
         
             <Grid container component="main" className={classes.root}>
                 <CssBaseline />
-                <Grid item xs={12} sm={6} md={4} component={Paper} elevation={6} square>
+                <Grid item xs={12} sm={12} md={4} component={Paper} elevation={6} square>
                     <div className={classes.paper}>
                         <span className={classes.toolbarLogo}>
                             <img src={KetoLogo} alt="logo"  />
@@ -209,7 +210,7 @@ const Login = ({history}) => {
                         </form>
                     </div>
                 </Grid>
-                <Grid item xs={false} sm={6} md={8}  >
+                <Grid item xs={false} sm={false} md={8} className={classes.image}>
                     <Carousel />
                 </Grid>
 
