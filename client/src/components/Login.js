@@ -209,8 +209,8 @@ const Login = ({history}) => {
                         </form>
                     </div>
                 </Grid>
-                <Grid item xs={false} sm={6} md={8}>
-                    <Carousel xs={false} sm={6} md={8} className={classes.image} />
+                <Grid item xs={false} sm={6} md={8}  >
+                    <Carousel />
                 </Grid>
 
             </Grid>

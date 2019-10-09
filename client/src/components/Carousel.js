@@ -8,7 +8,6 @@ const imageStyle ={
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: 'fit-content'
 }
 
 
@@ -19,7 +18,7 @@ export default () => (
         showArrows={false}
         showIndicators={false}
         transitionTime={1000}
-        interval={4000}
+        interval={10000}
         
         showStatus={false}
     >
