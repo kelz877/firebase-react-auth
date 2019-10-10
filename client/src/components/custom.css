@@ -1,0 +1,82 @@
+
+
+/*====== WIDTH ======*/
+.screenW {
+    width: 100%;
+}
+.fullW {
+    width: 100%;
+}
+/*====== HEIGHT ======*/
+.screenH {
+    height: 100vh;
+}
+.fullH {
+    height: 100%;
+}
+
+
+/*====== IMAGE ======*/
+.imgCover {
+    object-fit: cover;
+}
+/*====== OVERFLOW ======*/
+.overflowH {
+    overflow: hidden;
+}
+/*====== TRANSITIONS ======*/
+.transition1l {
+    
+    transition: .5s ease-in-out;
+
+}
+    
+
+   
+
+
+
+
+/*====== POSITION ======*/
+.abs {
+    position: absolute;
+}
+.rel {
+    position: relative;
+}
+/* .left0 {
+    left: 0px;
+} */
+/* .left100vw {
+    left: 100vw; 
+
+} */
+/* .leftM100vw {
+    left: -100vw;
+} */
+.bot0 {
+    bottom: 0;
+}
+/*====== FLEX ======*/
+.df {
+    display: flex;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.fCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex1 {
+    flex: 1;
+}
+.flex8 {
+    flex: 8;
+}

@@ -21,7 +21,7 @@ export default () => (
         showArrows={false}
         showIndicators={false}
         transitionTime={1000}
-        interval={4000}
+        interval={2000}
         style={heightStyle}
         showStatus={false}
     >
