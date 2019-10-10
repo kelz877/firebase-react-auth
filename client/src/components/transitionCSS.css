@@ -1,0 +1,41 @@
+
+    
+.principal-section .principal-image-container{
+    z-index: 10;
+}
+
+.principal-section .principal-image-container img {
+    height: 100vh;
+}
+
+.principal-section .principal-image-container .fade-appear {
+    opacity: 0.01;
+}
+
+.principal-section .principal-image-container .fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.principal-section .principal-image-container .fade-enter {
+    opacity: 0.01;
+}
+
+.principal-section .principal-image-container .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+/* exit */
+.principal-section .principal-image-container .fade-exit {
+    opacity: 1;
+}
+.principal-section .principal-image-container .fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 2000ms ease-in;
+}
+.principal-section .principal-image-container .fade-exit-done {
+    opacity: 0.01;
+    
+}
+

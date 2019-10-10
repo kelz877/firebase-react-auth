@@ -15,9 +15,10 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import KetoLogo from '../assets/keto_logo.png'
-import Carousel from './Carousel'
+//import Carousel from './Carousel'
 //import "react-responsive-carousel/lib/styles/carousel.css";
-import SlideshowApp from './SlideshowApp'
+//import SlideshowApp from './SlideshowApp'
+import ImageCarousel from './reactTransition'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -212,7 +213,8 @@ const Login = ({history}) => {
                 </Grid>
                 <Grid item xs={false} sm={false} md={8} className={classes.image}>
                     {/* <Carousel /> */}
-                    <SlideshowApp />
+                    {/* <SlideshowApp /> */}
+                    <ImageCarousel />
                 </Grid>
 
             </Grid>
