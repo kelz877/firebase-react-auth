@@ -15,9 +15,6 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import KetoLogo from '../assets/keto_logo.png'
-//import Carousel from './Carousel'
-//import "react-responsive-carousel/lib/styles/carousel.css";
-//import SlideshowApp from './SlideshowApp'
 import ImageCarousel from './reactTransition'
 
 const useStyles = makeStyles(theme => ({
@@ -41,7 +38,7 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: '#0b0080',
     },
     form: {
-      width: '60%', // Fix IE 11 issue.
+      width: '70%', // Fix IE 11 issue.
       marginTop: theme.spacing(1),
     },
     submit: {
@@ -212,8 +209,6 @@ const Login = ({history}) => {
                     </div>
                 </Grid>
                 <Grid item xs={false} sm={false} md={8} className={classes.image}>
-                    {/* <Carousel /> */}
-                    {/* <SlideshowApp /> */}
                     <ImageCarousel />
                 </Grid>
 
