@@ -35,10 +35,10 @@ function App() {
 
     return (
         <AuthContext.Provider value={{ isLoggedIn, setLoggedIn }}>
-            Is logged in? {JSON.stringify(isLoggedIn)}
+            {/* Is logged in? {JSON.stringify(isLoggedIn)} */}
             <div>
                 <Router>
-                    <Header isLoggedIn={isLoggedIn}/>
+                    {/* <Header isLoggedIn={isLoggedIn}/> */}
                     <Switch>
                         {ProtectedRoutes.map(route => (
                             <ProtectedRouteHoc
